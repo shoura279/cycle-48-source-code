@@ -1,0 +1,24 @@
+-- register
+
+- url : '/auth/register'
+- method : 'POST'
+- request body: {userName:string , email:string , password:string , phone:string}
+- success response status : 201
+- success response body : {message : 'user created successfully' , success: true , data: createdUser }
+- fail status : 409 - conflict
+- fail response body : { message: 'user already exists.', success:false }
+
+---------------------
+-- login
+---------------------
+-- forget password
+---------------------
+-- send otp
+---------------------
+-- reset password
+---------------------
+-- get user
+---------------------
+-- update user
+---------------------
+-- delete user
